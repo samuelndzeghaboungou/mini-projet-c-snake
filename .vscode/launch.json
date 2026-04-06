@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Snake: Run Script (PowerShell)",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/run.ps1",
+            "args": []
+        },
+        {
+            "name": "Snake: Build and Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/snake.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Build Snake"
+        }
+    ]
+}
